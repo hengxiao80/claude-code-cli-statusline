@@ -3,12 +3,12 @@
 A right-aligned status line for the Claude Code CLI:
 
 ```
-Opus 5.5 | ctx 15% | $2.43 | 5h 8% (↻ 20:50) | 7d 27% (↻ Fri 21:00)
+Opus 5.5 (xhigh) | ctx 15% | $2.43 | 5h 8% (↻ 20:50) | 7d 27% (↻ Fri 21:00)
 ```
 
 | Cell | Meaning |
 | --- | --- |
-| `Opus 5.5` | current model |
+| `Opus 5.5 (xhigh)` | current model and effort level |
 | `ctx 15%` | share of the context window used |
 | `$2.43` | API-price estimate of the session's tokens since it started (same as `/cost`); not billed on a subscription plan |
 | `5h 8% (↻ 20:50)` | 5-hour usage limit used, and when it resets (local time) |

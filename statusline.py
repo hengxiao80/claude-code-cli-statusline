@@ -34,7 +34,9 @@ parts = []
 
 model = get("model", "display_name")
 if model:
-    parts.append(model)
+    # Effort level (low ... max) next to the model
+    effort = get("effort", "level")
+    parts.append("%s (%s)" % (model, effort) if effort else model)
 
 # Context window
 pct = get("context_window", "used_percentage")
